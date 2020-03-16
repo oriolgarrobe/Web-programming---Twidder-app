@@ -346,7 +346,6 @@ var get_user_messages_by_email = function() {
 							}
 						}
 						document.getElementById("theTextarea_2").innerHTML = text;
-						document.getElementById("wall_form_2").innerHTML.reset();
 					}
 					else {
 						console.log(response["message"])
