@@ -94,7 +94,7 @@ var login_member = function() {
 						document.getElementById("tabs-1").style.display = 'block';
 						get_user_data_by_token();
 
-						var connection = new WebSocket('ws://127.0.0.1:5000/websocket');
+						var connection = new WebSocket(`wss://${document.domain}/websocket`);
     				connection.onopen = function(){
         			message = {'token': JSON.parse(sessionStorage.getItem("token"))};
         			connection.send(JSON.stringify(message));
