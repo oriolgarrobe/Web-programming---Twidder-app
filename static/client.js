@@ -346,7 +346,6 @@ var get_user_messages_by_email = function() {
 							}
 						}
 						document.getElementById("theTextarea_2").innerHTML = text;
-						document.getElementById("wall_thoughts_2").innerHTML = "";						
 					}
 					else {
 						console.log(response["message"])
@@ -411,6 +410,7 @@ var post_to_friend_wall = function() {
 			if (this.readyState == 4){
 				if (this.status == 200){
 					var response = JSON.parse(req.responseText);
+					document.getElementById("wall_thoughts_2").value = "";
 					get_user_messages_by_email();
 				}
 				else if (this.status == 400){
