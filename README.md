@@ -1,3 +1,13 @@
 # Web programming - Twidder-app
 
-### Files
+Step-by-step developement of a Web application. 
+
+### Twidder App
+Example of a Social Media app. 
+
+### Development
+ * Client-side: JavaScript, HTML, CSS.
+ * Server-side: Python, Flask, SQL.
+ * Client-server communication: JSON, WebSockets. 
+
+
